@@ -48,7 +48,7 @@ class ApiClient {
     });
   }
 
-  async logout(email: string, password: string) {
+  async logout() {
     return this.request("/api/auth/logout", {
       method: "POST",
     });
@@ -79,3 +79,5 @@ class ApiClient {
     });
   }
 }
+
+export const apiClient = new ApiClient();
