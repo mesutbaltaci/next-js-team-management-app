@@ -45,7 +45,7 @@ const RegisterPage = () => {
             {" "}
             or{" "}
             <Link
-              href="login"
+              href="/login"
               className="font-medium text-blue-400 hover:text-blue-300"
             >
               Sign in to existing account
@@ -129,7 +129,7 @@ const RegisterPage = () => {
         <button
           type="submit"
           disabled={isPending}
-          className="h-full w-full mt-6 my-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          className=" w-full mt-6 py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700"
         >
           {isPending ? "Creating account..." : "Create account"}
         </button>
