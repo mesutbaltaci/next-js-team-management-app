@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export const Header = ({ user }: HeaderProps) => {
   const pathName = usePathname();
-  const user1 = false;
+
   const navigation = [
     { name: "Home", href: "/", show: true },
     { name: "Dashboard", href: "/dashboard", show: true },
@@ -51,7 +51,7 @@ export const Header = ({ user }: HeaderProps) => {
           </nav>
           {/* user info */}
           <div className="flex items-center space-x-4">
-            {user1 ? (
+            {user ? (
               <>
                 <span className="text-sm text-slate-300"> Mesut</span>
                 <button className="px-3 py-2 bg-red-500 text-white text-sm rounded hover:bg-red-700 transition-colors">
