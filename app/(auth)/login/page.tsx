@@ -14,10 +14,7 @@ const LoginPage = () => {
       const password = formData.get("password") as string;
 
       try {
-        await apiClient.login({
-          email,
-          password,
-        });
+        await apiClient.login(email, password);
         window.location.href = "/dashboard";
         return { success: true };
       } catch (error) {
